@@ -29,7 +29,7 @@ const TempApp = () => {
 
         {
             !city ? (
-                <p>No Data Found</p>
+                <p className='nodata'>No Data Found</p>
             ): (
                 <div>
                 <div className='info'>
@@ -40,6 +40,7 @@ const TempApp = () => {
                  {city.temp}
                 </h1>
                 <h3 className='tempmin_max'>Min :{city.temp_min} | Max :{city.temp_max}</h3>
+                <h4 className='tempmin_max'>Feels-like:{city.feels_like}</h4>
             </div>
             <div className='wave -one'></div>
             <div className='wave -two'></div>
